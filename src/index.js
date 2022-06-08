@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Pagination from './Pagination/index.js';
 import reportWebVitals from './reportWebVitals';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const url = 'https://jsonplaceholder.typicode.com/todos';
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Pagination url={url} />
   </React.StrictMode>
 );
 
